@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery Modal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="demo-btn" onclick="openModal()">Explore Art Gallery</button>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <button class="close-btn" onclick="closeModal()">&times;</button>
+            
+            <div class="modal-image-container">
+                <img src="" alt="" class="modal-image" id="modalImage">
+            </div>
+            
+            <div class="thumbnails" id="thumbnails"></div>
+            
+            <div class="modal-content">
+                <h2 class="artwork-title" id="artworkTitle"></h2>
+                <p class="artwork-artist" id="artworkArtist"></p>
+                <p class="artwork-info" id="artworkInfo"></p>
+                
+                <div class="nav-buttons">
+                    <button class="nav-btn" onclick="previousArt()">Previous</button>
+                    <button class="nav-btn primary" onclick="nextArt()">Next</button>
+                </div>
+                
+                <button class="close-modal-btn" onclick="closeModal()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+      </html>
