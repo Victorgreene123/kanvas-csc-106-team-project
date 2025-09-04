@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KANVAS — Art Submission</title>
+  <link rel="stylesheet" href="kanvasform.css" />
+</head>
+<body style="font-family: Futura, 'Futura PT', 'Trebuchet MS', Arial, sans-serif;">
+  <div class="page-wrap" data-theme="light">
+    <section class="glass-wrap">
+      <!-- LEFT: PREVIEW -->
+      <aside class="preview-pane">
+        <div class="preview-image">
+          <img id="previewImg" src="basquiat2.jpg" alt="Artwork preview" />
+        </div>
+
+        <div class="preview-meta">
+          <h3 id="previewTitle">POVERTY & POWER SCRAWLED ON WALLS</h3>
+          <p id="previewDesc">
+            Artwork in the background is one of Jean-Michel Basquiat works , 
+            Basquiat's art focused on dichotomies such as wealth versus poverty, integration versus segregation, and inner versus outer experience.
+          </p>
+
+          <dl class="meta-list">
+            <dt>Artist</dt><dd id="previewArtist">Jean-Michel Basquiat</dd>
+            <dt>Medium</dt><dd id="previewMedium">Painting</dd>
+            <dt>Style</dt><dd id="previewStyle">Abstract (Graffiti)</dd>
+            <dt>Date</dt><dd id="previewDate">1981</dd>
+          </dl>       
+
+          <!-- Step 2 actions appear AFTER Continue -->
+          <div class="confirm-actions hidden" id="confirmActions">
+            <button type="button" class="btn-ghost" id="backBtn">Back</button>
+            <button type="submit" class="btn-primary" form="kanvasForm">Submit Artwork</button>
+          </div>
+        </div>
+      </aside>
+
+      <!-- RIGHT: FORM -->
+      <main class="form-pane">
+        <header class="form-header">
+          <h1 class="brand">KANVAS</h1>
+          <h2 class="title">ART SUBMISSION FORM</h2>
+        </header>
+
+        <form id="kanvasForm" class="kanvas-form" action="/submit" method="POST" enctype="multipart/form-data">
+          <!-- Full name (side-by-side) -->
+          <div class="field-row two">
+            <div class="field">
+              <label for="firstName">Full name</label>
+              <input id="firstName" name="firstName" type="text" placeholder="First Name" required />
+            </div>
+            <div class="field">
+              <label class="visually-hidden" for="lastName">Last Name</label>
+              <input id="lastName" name="lastName" type="text" placeholder="Last Name" required />
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="field">
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" placeholder="dx@example.com" required />
+          </div>
+
+          <!-- Bio (taller) -->
+          <div class="field">
+            <label for="bio">Artist’s bio</label>
+            <textarea id="bio" name="bio" rows="10" placeholder="Tell us about you…" required></textarea>
+          </div>
+
+          <!-- Upload: drag/drop area -->
+          <div class="field">
+            <label for="artwork">Upload artwork</label>
+            <div id="dropzone" class="dropzone" tabindex="0" aria-label="Drop files here or click to upload">
+              <div class="dz-inner">
+                <strong>Drag & Drop</strong> or <strong>Click</strong> to upload (PNG/JPEG)
+                <div class="help">You can also paste (Ctrl/Cmd+V) an image.</div>
+              </div>
+              <input id="artwork" name="artwork" type="file" accept="image/*" required />
+            </div>
+          </div>
+
+          <!-- Artwork description -->
+          <div class="field">
+            <label for="description">Artwork description (in your words)</label>
+            <textarea id="description" name="description" rows="6" placeholder="Describe the piece, concept, process…" required></textarea>
+          </div>
+
+          <!-- Medium -->
+          <div class="field">
+            <label for="medium">Artwork medium</label>
+            <select id="medium" name="medium" required>
+              <option value="" disabled selected>PLEASE SELECT</option>
+              <option value="Painting">painting</option>
+              <option value="Sculpture">sculpture</option>
+              <option value="Photography">photography</option>
+              <option value="Others">others</option>
+            </select>
+          </div>
+
+          <!-- Style -->
+          <div class="field">
+            <label for="style">Artwork style</label>
+            <select id="style" name="style" required>
+              <option value="" disabled selected>PLEASE SELECT</option>
+              <option value="Abstract">abstract</option>
+              <option value="Figurative">figurative</option>
+              <option value="Landscape">landscape</option>
+              <option value="Surrealism">surrealism</option>
+              <option value="Others">others</option>
+            </select>
+          </div>
+
+          <!-- Originality -->
+          <div class="field">
+            <label for="originality">How would you describe the originality of your artwork?</label>
+            <div class="range-row">
+              <span>1</span>
+              <input id="originality" name="originality" type="range" min="1" max="10" value="7" />
+              <span>10</span>
+            </div>
+          </div>
+
+          <!-- Title -->
+          <div class="field">
+            <label for="title">Artwork title</label>
+            <input id="title" name="title" type="text" placeholder="e.g., Midnight in Lagos" required />
+          </div>
+
+          <!-- Date -->
+          <div class="field">
+            <label for="creationDate">Artwork creation date</label>
+            <input id="creationDate" name="creationDate" type="date" required />
+          </div>
+
+          <!-- Sold? -->
+          <div class="field">
+            <span class="label">Have you sold any copies of this artwork before?</span>
+            <div class="radio-row">
+              <label><input type="radio" name="sold" value="Yes" required /> Yes</label>
+              <label><input type="radio" name="sold" value="No" /> No</label>
+            </div>
+          </div>
+
+          <!-- Notes -->
+          <div class="field">
+            <label for="notes">Any additional comments or notes <span class="muted">(optional)</span></label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Framing, edition number, provenance…"></textarea>
+          </div>
+
+          <!-- STEP 1 actions -->
+          <div class="actions two">
+            <button type="button" class="btn-ghost">Cancel</button>
+            <button type="button" class="btn-primary" id="continueBtn">Continue</button>
+          </div>
+        </form>
+      </main>
+    </section>
+  </div>
+
+  <script src="kanvasform.js"></script>
+</body>
+</html>
