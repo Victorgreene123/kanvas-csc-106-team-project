@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>KANVAS — Art Submission</title>
-  <link rel="stylesheet" href="kanvasform.css" />
+  <link rel="stylesheet" href="../styles/kanvasform.css" />
 </head>
 <body style="font-family: Futura, 'Futura PT', 'Trebuchet MS', Arial, sans-serif;">
   <div class="page-wrap" data-theme="light">
@@ -77,14 +77,14 @@
                 <strong>Drag & Drop</strong> or <strong>Click</strong> to upload (PNG/JPEG)
                 <div class="help">You can also paste (Ctrl/Cmd+V) an image.</div>
               </div>
-              <input id="artwork" name="artwork" type="file" accept="image/*" required />
+              <input id="artwork" name="artwork" type="file" accept="image/*" id="artwork" required />
             </div>
           </div>
 
           <!-- Artwork description -->
           <div class="field">
             <label for="description">Artwork description (in your words)</label>
-            <textarea id="description" name="description" rows="6" placeholder="Describe the piece, concept, process…" required></textarea>
+            <textarea id="description" id="description" name="description" rows="6" placeholder="Describe the piece, concept, process…" required></textarea>
           </div>
 
           <!-- Medium -->
