@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+  }
+  * {
+    font-family: "Lato", sans-serif;
+  }
+  .hero-bg {
+    background-color: #0A0F1C;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-text {
+    z-index: 10;
+    font-size: 23px;
+    gap: 14px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .hero-text-big {
+    color: white;
+    font-size: 90px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: "Cabin Sketch", sans-serif;
+  }
+  .hero-text-small {
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .cta-btn {
+    margin-top: 20px;
+    font-size: 23px;
+    background: linear-gradient(135deg, #2563EB, #9333EA);
+    color: #fff;
+    width: 360px;
+    height: 70px;
+    border-radius: 45px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px rgba(147, 51, 234, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 0px 20px rgba(147, 51, 234, 0.6);
+  }
+  .text-styled {
+    background: linear-gradient(135deg, #2563EB, #9333EA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* Firefox support */
+  }
+
+  /* Hero frames container */
+  .hero-frames {
+    position: absolute;
+    width: 100%;
+    height: 500px; /* adjust for your hero section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* ✨ Updated frame style */
+  .frame {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    border: 3px solid transparent;
+    background: 
+      linear-gradient(#0A0F1C, #0A0F1C) padding-box, 
+      linear-gradient(135deg, #2563EB, #9333EA) border-box;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  .frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 17px; /* slightly smaller for border effect */
+  }
+
+  /* scattered layout */
+  .frame1 {
+     transform: rotate(15deg)  ;
+     top: 5%;
+     left: 0%;
+    }
+  .frame2 {
+     transform: rotate(-20deg)  ;
+     top: 5%;
+     left: 85%;
+    }
+  .frame3 {
+     transform: rotate(10deg)  ;
+     bottom: 5%;
+     left: 0%;
+    }
+  .frame4 {
+     transform: rotate(-12deg) ;
+     bottom: 5%;
+     left: 85%;
+    }
+
+  /* hover effect */
+  .frame:hover {
+    transform: scale(1.15) rotate(0deg);
+    z-index: 10;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+  }
+
+
+  .logo-text {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 64px;
+    font-weight: 700;
+    font-family: "Cabin Sketch", sans-serif;
+    display: flex;
+    gap: 6px;
+    background: linear-gradient(90deg, #9333EA, #EC4899, #FBBF24, #22D3EE);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    animation: gradientShift 6s ease infinite;
+    cursor: default;
+  }
+  
+  .logo-text span {
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+  
+  .logo-text span:hover {
+    transform: translateY(-8px) rotate(-6deg) scale(1.1);
+  }
+  
+  /* Bounce animation on hover across letters */
+  
+  .logo-text:hover span:nth-child(1) { animation-delay: 0s; }
+  .logo-text:hover span:nth-child(2) { animation-delay: 0.05s; }
+  .logo-text:hover span:nth-child(3) { animation-delay: 0.1s; }
+  .logo-text:hover span:nth-child(4) { animation-delay: 0.15s; }
+  .logo-text:hover span:nth-child(5) { animation-delay: 0.2s; }
+  .logo-text:hover span:nth-child(6) { animation-delay: 0.25s; }
+  
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+
+  
