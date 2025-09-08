@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header h1 {
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-family: "Papyrus",fantasy;
+}
+
+nav, a {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 10px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+nav {
+  padding-left: 0;
+}
+
+nav a#homePage, nav a#contact, nav a#contact {
+  background-color: white;
+  color: black;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  font-variant: small-caps;
+}
