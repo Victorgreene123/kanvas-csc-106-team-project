@@ -1,3 +1,6 @@
+import { createArtworkCard } from "./gallery.js"; 
+import { saveArtwork, loadArtworks } from "./artworks.js";
+
 let artworksList = [];   // store artworks
 let currentArtworkIndex = 0;
 
@@ -12,7 +15,20 @@ export function openArtworkModal(artwork, allArtworks) {
 }
 
 function updateModalContent(artwork) {
-  document.getElementById("modalImage").src = `/components/${artwork.image}`;
+  const modalImage = document.getElementById("modalImage");
+
+  if (!artwork.image) {
+    modalImage.src = ""; // fallback if no image
+  } 
+  // ✅ If it's a base64 uploaded image, keep it as is
+  else if (artwork.image.startsWith("data:image")) {
+    modalImage.src = artwork.image;
+  } 
+  // ✅ If it’s one of your default artworks, stored in /images/
+  else {
+    modalImage.src = `/${artwork.image}`;
+  }
+
   document.getElementById("modalTitle").textContent = artwork.title;
   document.getElementById("modalArtist").textContent = `by ${artwork.artist}`;
   document.getElementById("modalMedium").textContent = artwork.medium;
@@ -21,6 +37,7 @@ function updateModalContent(artwork) {
   document.getElementById("modalYear").textContent = artwork.year;
   document.getElementById("modalOriginality").textContent = artwork.originality;
 }
+
 
 // Navigation
 export function nextArtwork() {
@@ -192,52 +209,49 @@ export function initAddArtworkForm() {
     }
   
     // Make the form submission handler async
-    form.addEventListener("submit", async (e) => { // Added async here
-        e.preventDefault();
-      
-        // Get form values
-        const newArtwork = {
-          id: Date.now(),
-          title: document.getElementById("title").value,
-          artist: `${document.getElementById("firstName").value} ${document.getElementById("lastName").value}`,
-          email: document.getElementById("email").value,
-          bio: document.getElementById("bio").value,
-          image: dropzone.querySelector("img") ? dropzone.querySelector("img").src : "",
-          description: document.getElementById("description").value,
-          medium: document.getElementById("medium").value,
-          style: document.getElementById("style").value,
-          year: document.getElementById("creationDate").value.split("-")[0], // Get year from date
-          originality: parseInt(document.getElementById("originality").value),
-          notes: document.getElementById("notes").value
-        };
-      
-        console.log("✅ New Artwork Submitted:", newArtwork);
-      
-        try {
-          // Save to localStorage using the function from artworks.js
-          const { saveArtwork } = await import("./artworks.js");
-          saveArtwork(newArtwork);
-      
-          // Close modal and reset form
-          formModal.classList.add("hidden");
-          form.reset();
-          currentStep = 1;
-          showStep(currentStep);
-          
-          // Reset dropzone
-          if (dropzoneContent) {
-            dropzone.innerHTML = dropzoneContent.outerHTML;
-          }
-      
-          // Show success message
-          showMessage("Success!", "Your artwork has been added to the gallery.", "success");
-          
-          // Refresh the gallery by reloading the page (simple solution)
-          window.location.reload();
-      
-        } catch (error) {
-          console.error("Error saving artwork:", error);
-          showMessage("Error", "Failed to save artwork. Please try again.", "error");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+    
+      const newArtwork = {
+        id: Date.now(),
+        title: document.getElementById("title").value,
+        artist: `${document.getElementById("firstName").value} ${document.getElementById("lastName").value}`,
+        email: document.getElementById("email").value,
+        bio: document.getElementById("bio").value,
+        image: dropzone.querySelector("img") ? dropzone.querySelector("img").src : "",
+        description: document.getElementById("description").value,
+        medium: document.getElementById("medium").value,
+        style: document.getElementById("style").value,
+        year: document.getElementById("creationDate").value.split("-")[0],
+        originality: parseInt(document.getElementById("originality").value),
+        notes: document.getElementById("notes").value,
+      };
+    
+      try {
+        saveArtwork(newArtwork);
+    
+        formModal.classList.add("hidden");
+        form.reset();
+        currentStep = 1;
+        showStep(currentStep);
+    
+        if (dropzoneContent) {
+          dropzone.innerHTML = dropzoneContent.outerHTML;
         }
-    });
+    
+        showMessage("Success!", "Your artwork has been added to the gallery.", "success");
+    
+        // ✅ re-render the gallery dynamically
+        loadArtworks().then((artworks) => {
+          const galleryEl = document.getElementById("gallery");
+          galleryEl.innerHTML = "";
+          artworks.forEach((art) => {
+            galleryEl.appendChild(createArtworkCard(art, artworks));
+          });
+        });
+      } catch (error) {
+        console.error("Error saving artwork:", error);
+        showMessage("Error", "Failed to save artwork. Please try again.", "error");
+      }
+    });        
 }

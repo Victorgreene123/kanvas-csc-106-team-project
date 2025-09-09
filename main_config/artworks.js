@@ -1,27 +1,26 @@
-// Sample artworks data
-// import data from "../components/artworks.json" assert { type: "json"};
+// artworks.js
 
-  
-  // const sampleArtworks = data;
-  // Load artworks from localStorage
-  export async function loadArtworks() {
-    const response = await fetch('../components/artworks.json');
-    const sampleArtworks = await response.json();
-    console.log(sampleArtworks);
-    console.log(Array.isArray(sampleArtworks));
-    const savedArtworks = JSON.parse(localStorage.getItem("kanvasArtworks") || "[]");
-    return [...sampleArtworks, ...savedArtworks];
+// Load artworks from both JSON (static) + localStorage (user-added)
+export async function loadArtworks() {
+  try {
+    // 1. Fetch static sample artworks (100)
+    const response = await fetch("/components/artworks.json"); 
+    const jsonArtworks = await response.json();
+
+    // 2. Load user-added artworks from localStorage
+    const localArtworks = JSON.parse(localStorage.getItem("kanvasArtworks") || "[]");
+
+    // 3. Merge (user artworks first so they show up on top)
+    return [...localArtworks, ...jsonArtworks];
+  } catch (err) {
+    console.error("Error loading artworks:", err);
+    return [];
   }
-  
-  // Save artwork to localStorage
-  export function saveArtwork(artwork) {
-    const savedArtworks = JSON.parse(localStorage.getItem("kanvasArtworks") || "[]");
-  
-    if (savedArtworks.length >= 10) {
-      savedArtworks.shift(); // keep last 10
-    }
-  
-    savedArtworks.push(artwork);
-    localStorage.setItem("kanvasArtworks", JSON.stringify(savedArtworks));
-  }
-  
+}
+
+// Save a single artwork to localStorage
+export function saveArtwork(artwork) {
+  const artworks = JSON.parse(localStorage.getItem("kanvasArtworks") || "[]");
+  artworks.push(artwork);
+  localStorage.setItem("kanvasArtworks", JSON.stringify(artworks));
+}

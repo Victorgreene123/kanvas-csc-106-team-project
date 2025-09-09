@@ -1,5 +1,5 @@
 import renderNavbar from "./main_config/navbar.js";
-import renderHero from "./main_config/hero.js";
+import renderHero, { initSearch } from "./main_config/hero.js";
 import renderGallery from "./main_config/gallery.js";
 import renderModals from "./main_config/modals.js";
 import { closeModals, nextArtwork, prevArtwork, initAddArtworkForm } from "./main_config/modal.js";
@@ -12,6 +12,9 @@ window.onload = function () {
     root.insertAdjacentHTML("beforeend", renderHero());
     root.insertAdjacentHTML("beforeend", renderGallery());
     root.insertAdjacentHTML("beforeend", renderModals());
+
+    // Initialize search functionality after hero is rendered
+    initSearch();
   
     // Modal controls
     document.getElementById("closeModalBtn").addEventListener("click", closeModals);

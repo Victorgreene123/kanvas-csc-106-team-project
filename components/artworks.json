@@ -1,130 +1,156 @@
-[ 
-
-    {
-      "id": 1,
-      "title": "Cafe Terrace At Night",
-      "artist": "Vincent van Gogh",
-      "year": 1888,
-      "image": "images/cafe terrace.webp"
-    },
+[
     {
       "id": 2,
       "title": "Nighthawks",
       "artist": "Edward Hopper",
       "year": 1942,
-      "image": "images/nighthawks.jpeg"
+      "image": "images/nighthawks.jpeg",
+      "medium":"Acrylic",
+      "originality":"6"
     },
     {
       "id": 3,
       "title": "Niagara Falls",
       "artist": "Ferdinand Richardt",
       "year": 1856,
-      "image": "images/FerdRichardt_ViewOfNiagaraFalls1.jpeg"
+      "image": "images/FerdRichardt_ViewOfNiagaraFalls1.jpeg",
+      "medium": "Acrylic",
+      "originality":"6"
     },
     {
       "id": 4,
       "title": "Lost",
       "artist": "Peju Alatise",
       "year": 2015,
-      "image": "images/lost.webp"
+      "image": "images/lost.webp",
+      "medium": "Acrylic",
+      "originality":"6"
     },
     {
       "id": 5,
       "title": "The Milkmaid",
       "artist": "Johannes Vermeer",
       "year": 1658,
-      "image": "images/Johannes_Vermeer_-_Het_melkmeisje_-_Google_Art_Project.png"
+      "image": "images/Johannes_Vermeer_-_Het_melkmeisje_-_Google_Art_Project.png",
+      "medium": "Acrylic",
+      "originality":"6"
     },
     {
       "id": 6,
       "title": "Mona Lisa",
       "artist": "Leonardo da Vinci",
       "year": 1503,
-      "image": "images/Mona-Lisa-oil-wood-panel-Leonardo-da.webp"
+      "image": "images/Mona-Lisa-oil-wood-panel-Leonardo-da.webp",
+      "medium": "Acrylic",
+      "originality":"6"
     },
     {
       "id": 7,
       "title": "Tutu",
       "artist": "Ben Enwonwu",
       "year": 1973,
-      "image": "images/ben-enwonwu-tutu-1974-trivium-art-history.jpg"
+      "image": "images/ben-enwonwu-tutu-1974-trivium-art-history.jpg",
+      "medium": "Acrylic",
+      "originality":"7"
     },
     {
       "id": 8,
       "title": "The Last Clown",
       "artist": "Francis Alys",
       "year": 2000,
-      "image": "images/Frames-de-The-last-Clown-1995-2000.png"
+      "image": "images/Frames-de-The-last-Clown-1995-2000.png",
+      "medium": "Acrylic",
+      "originality":"7"
     },
     {
       "id": 9,
       "title": "A Young Girl With Flowers",
       "artist": "Charles Victor Thirion",
       "year": 1877,
-      "image": "images/a young girl.jpeg"
+      "image": "images/a young girl.jpeg",
+      "medium": "Acrylic",
+      "originality":"7"
     },
     {
       "id": 10,
       "title": "Anxiety",
       "artist": "Edvard Munch",
       "year": 1894,
-      "image": "images/Edvard_Munch_-_Anxiety_-_Google_Art_Project.jpg"
+      "image": "images/Edvard_Munch_-_Anxiety_-_Google_Art_Project.jpg",
+      "medium": "Acrylic",
+      "originality":"7"
     },
     {
       "id": 11,
       "title": "Full Fathom Five",
       "artist": "Jackson Pollock",
       "year": 1947,
-      "image": "images/full fathom five.jpg"
+      "image": "images/full fathom five.jpg",
+      "medium":"Digital",
+      "originality": "8"
     },
     {
       "id": 12,
       "title": "The Old Guitarist",
       "artist": "Pablo Picasso",
       "year": 1904,
-      "image": "images/Old_guitarist_chicago.jpg"
+      "image": "images/Old_guitarist_chicago.jpg",
+      "medium":"Digital",
+      "originality":"7"
     },
     {
       "id": 13,
       "title": "The evening Lamp",
       "artist": "Mina Fonda Ochtman",
       "year": 1900,
-      "image": "images/the evening lamp.webp"
+      "image": "images/the evening lamp.webp",
+      "medium":"Digital",
+      "originality":"7"
     },
     {
       "id": 14,
       "title": "Graphic Tectonic",
       "artist": "Josef Albers",
       "year": 1941,
-      "image": "images/graphic-tectonic-1941.jpg"
+      "image": "images/graphic-tectonic-1941.jpg",
+      "medium":"Digital",
+      "originality":"9"
     },
     {
       "id": 15,
       "title": "The Son Of Man",
       "artist": "Rene Magritte",
       "year": 1964,
-      "image": "images/Magritte_TheSonOfMan.jpg"
+      "image": "images/Magritte_TheSonOfMan.jpg",
+      "medium":"Digital",
+      "originality":"9"
     },
     {
       "id": 16,
       "title": "Le Chahut",
       "artist": "Georges Seurat",
       "year": 1890,
-      "image": "images/Georges_Seurat,_1889-90,_Le_Chahut,_Kröller-Müller_Museum.jpg"
+      "image": "images/Georges_Seurat,_1889-90,_Le_Chahut,_Kröller-Müller_Museum.jpg",
+      "medium":"Digital",
+      "originality":"9"
     },
     {
       "id": 17,
       "title": "Nike Davies-Okundaye",
       "artist": "Animal World",
       "year": 1968,
-      "image": "images/animal world.png"
+      "image": "images/animal world.png",
+      "originality":"9",
+      "medium": "Watercolor"
     },
     {
       "id": 18,
       "title": "Hyde Park",
       "artist": "Abayomi Barber",
       "year": 1960,
-      "image": "images/abayomi-barber-hyde-park-1280x791.jpg"
+      "image": "images/abayomi-barber-hyde-park-1280x791.jpg",
+      "originality":"9",
+      "medium": "Watercolor"
     },
     {
       "id": 19,
