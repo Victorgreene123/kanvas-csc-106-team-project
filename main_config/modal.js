@@ -41,6 +41,8 @@ function updateModalContent(artwork) {
 
 // Navigation
 export function nextArtwork() {
+  //check if the input values in that particular step are empty using the  current artwork index , if they are prompt a message.
+  
   if (artworksList.length === 0) return;
   currentArtworkIndex = (currentArtworkIndex + 1) % artworksList.length;
   updateModalContent(artworksList[currentArtworkIndex]);

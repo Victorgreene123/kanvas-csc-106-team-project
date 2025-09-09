@@ -4,9 +4,11 @@ import renderGalleryHero from "../main_config/hero.js"; // Gallery-specific hero
 import renderGallery from "../main_config/gallery.js";
 import renderModals from "../main_config/modals.js";
 import { closeModals, nextArtwork, prevArtwork, initAddArtworkForm } from "../main_config/modal.js";
+import { clearSearch, performSearch } from "./main_config/hero.js";
 
 window.onload = function() {
     const root = document.getElementById('root');
+    const search = document.getElementById('search')
     
     root.innerHTML = renderHero();
 
@@ -23,12 +25,34 @@ window.onload = function() {
         
         // Set up event listeners for the gallery
         setupGalleryEvents();
-        },500)
+        document.getElementById("search").addEventListener('click' , () => {
+            performSearch();
+        }
+        
+        );
 
+        document.addEventListener("click", (e) => {
+                if (e.target.id === "clearSearchBtn") {
+                    clearSearch();
+                }
+            });
+        
+            const searchInput = document.getElementById("searchInput");
+
+        searchInput.addEventListener("keypress", (e) => {
+            if (e.key === "Enter") {
+                performSearch();
+            }
+        });
+        },500)
+    
+        
+});
         
         // Append gallery components (navbar + gallery hero + gallery grid + modals)
         
-    });
+    
+
 };
 
 function setupGalleryEvents() {
@@ -53,3 +77,4 @@ function setupGalleryEvents() {
     // Initialize Add Artwork form logic
     initAddArtworkForm();
 }
+
