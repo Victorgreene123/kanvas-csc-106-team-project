@@ -4,7 +4,7 @@
 export async function loadArtworks() {
   try {
     // 1. Fetch static sample artworks (100)
-    const response = await fetch("/components/artworks.json"); 
+    const response = await fetch("./components/artworks.json");
     const jsonArtworks = await response.json();
 
     // 2. Load user-added artworks from localStorage
