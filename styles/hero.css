@@ -172,4 +172,8 @@ body {
   }
   
 
+  #hero{
+    transition: all ease-out 1s;
+  }
+
   

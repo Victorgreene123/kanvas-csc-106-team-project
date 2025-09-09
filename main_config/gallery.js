@@ -6,11 +6,11 @@ function createArtworkCard(artwork, allArtworks) {
   card.className =
     "artwork-card bg-white rounded-lg shadow-md cursor-pointer overflow-hidden";
   card.innerHTML = `
-    <img src="${artwork.image}" alt="${artwork.title}" class="w-full h-48 object-cover">
+    <img src="components/${artwork.image}" alt="${artwork.title}" class="w-full h-48 object-cover">
     <div class="p-4">
       <h3 class="text-lg font-semibold text-gray-900 mb-1">${artwork.title}</h3>
       <p class="text-gray-600 text-sm">by ${artwork.artist}</p>
-      <p class="text-gray-500 text-xs mt-1">${artwork.medium} • ${artwork.year}</p>
+      <p class="text-gray-500 text-xs mt-1"> ${artwork.year}</p>
     </div>
   `;
   // ✅ Pass both artwork and the full array
@@ -18,12 +18,13 @@ function createArtworkCard(artwork, allArtworks) {
   return card;
 }
 
-function renderArtworks() {
+async function  renderArtworks() {
   const galleryEl = document.getElementById("gallery");
   if (!galleryEl) return;
   
   galleryEl.innerHTML = "";
-  const artworks = loadArtworks();
+  const artworks = await loadArtworks();
+  console.log(artworks);
   
   artworks.forEach((artwork) => {
     galleryEl.appendChild(createArtworkCard(artwork, artworks));

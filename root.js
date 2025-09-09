@@ -7,13 +7,15 @@ import { closeModals, nextArtwork, prevArtwork, initAddArtworkForm } from "../ma
 
 window.onload = function() {
     const root = document.getElementById('root');
+    
     root.innerHTML = renderHero();
 
     document.getElementById('toGallery').addEventListener('click', () => {
         // Clear the root and render the gallery view components
+        const hero = document.getElementById("hero");
+        setTimeout(() =>  {
+        hero.style.opacity = 0;
         root.innerHTML = '';
-        
-        // Append gallery components (navbar + gallery hero + gallery grid + modals)
         root.appendChild(renderNavbar());
         root.insertAdjacentHTML("beforeend", renderGalleryHero());
         root.insertAdjacentHTML("beforeend", renderGallery());
@@ -21,6 +23,11 @@ window.onload = function() {
         
         // Set up event listeners for the gallery
         setupGalleryEvents();
+        },500)
+
+        
+        // Append gallery components (navbar + gallery hero + gallery grid + modals)
+        
     });
 };
 

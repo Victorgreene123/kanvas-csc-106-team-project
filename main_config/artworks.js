@@ -1,33 +1,14 @@
 // Sample artworks data
-const sampleArtworks = [
-    {
-        id: 1,
-        title: "The Starry Night",
-        artist: "Vincent van Gogh",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/400px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg",
-        description: "A swirling night sky over a quiet town, painted during van Gogh's stay at an asylum.",
-        medium: "Oil on Canvas",
-        style: "Post-Impressionism",
-        year: "1889",
-        originality: 10,
-        bio: "Dutch post-impressionist painter who is among the most famous and influential figures in the history of Western art."
-    },
-    {
-        id: 3,
-        title: "The Great Wave",
-        artist: "Katsushika Hokusai",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/The_Great_Wave_off_Kanagawa.jpg/400px-The_Great_Wave_off_Kanagawa.jpg",
-        description: "Iconic Japanese woodblock print depicting a dramatic wave about to crash down on boats.",
-        medium: "Woodblock Print",
-        style: "Ukiyo-e",
-        year: "1831",
-        originality: 8,
-        bio: "Japanese artist, ukiyo-e painter and printmaker of the Edo period, best known for the woodblock print series Thirty-six Views of Mount Fuji."
-    }
-];
+// import data from "../components/artworks.json" assert { type: "json"};
+
   
+  // const sampleArtworks = data;
   // Load artworks from localStorage
-  export function loadArtworks() {
+  export async function loadArtworks() {
+    const response = await fetch('../components/artworks.json');
+    const sampleArtworks = await response.json();
+    console.log(sampleArtworks);
+    console.log(Array.isArray(sampleArtworks));
     const savedArtworks = JSON.parse(localStorage.getItem("kanvasArtworks") || "[]");
     return [...sampleArtworks, ...savedArtworks];
   }

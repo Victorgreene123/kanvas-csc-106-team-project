@@ -1,602 +1,704 @@
-[
+[ 
+
     {
-      "Title": "Cafe Terrace At Night",
-      "Artist": "Vincent van Gogh",
-      "Year": 1888,
+      "id": 1,
+      "title": "Cafe Terrace At Night",
+      "artist": "Vincent van Gogh",
+      "year": 1888,
       "image": "images/cafe terrace.webp"
     },
     {
-      "Title": "Nighthawks",
-      "Artist": "Edward Hopper",
-      "Year": 1942,
+      "id": 2,
+      "title": "Nighthawks",
+      "artist": "Edward Hopper",
+      "year": 1942,
       "image": "images/nighthawks.jpeg"
     },
     {
-      "Title": "Niagara Falls",
-      "Artist": "Ferdinand Richardt",
-      "Year": 1856,
+      "id": 3,
+      "title": "Niagara Falls",
+      "artist": "Ferdinand Richardt",
+      "year": 1856,
       "image": "images/FerdRichardt_ViewOfNiagaraFalls1.jpeg"
     },
     {
-      "Title": "Lost",
-      "Artist": "Peju Alatise",
-      "Year": 2015,
+      "id": 4,
+      "title": "Lost",
+      "artist": "Peju Alatise",
+      "year": 2015,
       "image": "images/lost.webp"
     },
     {
-      "Title": "The Milkmaid",
-      "Artist": "Johannes Vermeer",
-      "Year": 1658,
+      "id": 5,
+      "title": "The Milkmaid",
+      "artist": "Johannes Vermeer",
+      "year": 1658,
       "image": "images/Johannes_Vermeer_-_Het_melkmeisje_-_Google_Art_Project.png"
     },
     {
-      "Title": "Mona Lisa",
-      "Artist": "Leonardo da Vinci",
-      "Year": 1503,
+      "id": 6,
+      "title": "Mona Lisa",
+      "artist": "Leonardo da Vinci",
+      "year": 1503,
       "image": "images/Mona-Lisa-oil-wood-panel-Leonardo-da.webp"
     },
     {
-      "Title": "Tutu",
-      "Artist": "Ben Enwonwu",
-      "Year": 1973,
+      "id": 7,
+      "title": "Tutu",
+      "artist": "Ben Enwonwu",
+      "year": 1973,
       "image": "images/ben-enwonwu-tutu-1974-trivium-art-history.jpg"
     },
     {
-      "Title": "The Last Clown",
-      "Artist": "Francis Alys",
-      "Year": 2000,
+      "id": 8,
+      "title": "The Last Clown",
+      "artist": "Francis Alys",
+      "year": 2000,
       "image": "images/Frames-de-The-last-Clown-1995-2000.png"
     },
     {
-      "Title": "A Young Girl With Flowers",
-      "Artist": "Charles Victor Thirion",
-      "Year": 1877,
+      "id": 9,
+      "title": "A Young Girl With Flowers",
+      "artist": "Charles Victor Thirion",
+      "year": 1877,
       "image": "images/a young girl.jpeg"
     },
     {
-      "Title": "Anxiety",
-      "Artist": "Edvard Munch",
-      "Year": 1894,
+      "id": 10,
+      "title": "Anxiety",
+      "artist": "Edvard Munch",
+      "year": 1894,
       "image": "images/Edvard_Munch_-_Anxiety_-_Google_Art_Project.jpg"
     },
     {
-      "Title": "Full Fathom Five",
-      "Artist": "Jackson Pollock",
-      "Year": 1947,
+      "id": 11,
+      "title": "Full Fathom Five",
+      "artist": "Jackson Pollock",
+      "year": 1947,
       "image": "images/full fathom five.jpg"
     },
     {
-      "Title": "The Old Guitarist",
-      "Artist": "Pablo Picasso",
-      "Year": 1904,
+      "id": 12,
+      "title": "The Old Guitarist",
+      "artist": "Pablo Picasso",
+      "year": 1904,
       "image": "images/Old_guitarist_chicago.jpg"
     },
     {
-      "Title": "The evening Lamp",
-      "Artist": "Mina Fonda Ochtman",
-      "Year": 1900,
+      "id": 13,
+      "title": "The evening Lamp",
+      "artist": "Mina Fonda Ochtman",
+      "year": 1900,
       "image": "images/the evening lamp.webp"
     },
     {
-      "Title": "Graphic Tectonic",
-      "Artist": "Josef Albers",
-      "Year": 1941,
+      "id": 14,
+      "title": "Graphic Tectonic",
+      "artist": "Josef Albers",
+      "year": 1941,
       "image": "images/graphic-tectonic-1941.jpg"
     },
     {
-      "Title": "The Son Of Man",
-      "Artist": "Rene Magritte",
-      "Year": 1964,
+      "id": 15,
+      "title": "The Son Of Man",
+      "artist": "Rene Magritte",
+      "year": 1964,
       "image": "images/Magritte_TheSonOfMan.jpg"
     },
     {
-      "Title": "Le Chahut",
-      "Artist": "Georges Seurat",
-      "Year": 1890,
+      "id": 16,
+      "title": "Le Chahut",
+      "artist": "Georges Seurat",
+      "year": 1890,
       "image": "images/Georges_Seurat,_1889-90,_Le_Chahut,_Kröller-Müller_Museum.jpg"
     },
     {
-      "Title": "Nike Davies-Okundaye",
-      "Artist": "Animal World",
-      "Year": 1968,
+      "id": 17,
+      "title": "Nike Davies-Okundaye",
+      "artist": "Animal World",
+      "year": 1968,
       "image": "images/animal world.png"
     },
     {
-      "Title": "Hyde Park",
-      "Artist": "Abayomi Barber",
-      "Year": 1960,
+      "id": 18,
+      "title": "Hyde Park",
+      "artist": "Abayomi Barber",
+      "year": 1960,
       "image": "images/abayomi-barber-hyde-park-1280x791.jpg"
     },
     {
-      "Title": "The Mask And The Cross",
-      "Artist": "Bruce Onabrakpeya",
-      "Year": 1966,
+      "id": 19,
+      "title": "The Mask And The Cross",
+      "artist": "Bruce Onabrakpeya",
+      "year": 1966,
       "image": "images/themaskandcross.jpeg"
     },
     {
-      "Title": "The Persistence of Memory",
-      "Artist": "Salvador Dalí",
-      "Year": 1931,
+      "id": 20,
+      "title": "The Persistence of Memory",
+      "artist": "Salvador Dalí",
+      "year": 1931,
       "image": "images/the-persistence-of-memory-1931-1024x778.jpg"
   },
   {
-      "Title": "Lovers Whispering",
-      "Artist": "Sokari Douglas Camp",
-      "Year": 2016,
+      "id": 21,
+      "title": "Lovers Whispering",
+      "artist": "Sokari Douglas Camp",
+      "year": 2016,
       "image": "images/loverswhispering.jpeg"
     },
     {
-      "Title": "The Beautyful Ones Series 2",
-      "Artist": "Njideka Akunyili Crosby",
-      "Year": 2013,
+      "id": 22,
+      "title": "The Beautyful Ones Series 2",
+      "artist": "Njideka Akunyili Crosby",
+      "year": 2013,
       "image": "images/Njideka.jpeg"
     },
     {
-      "Title": "Princess",
-      "Artist": "Lanre Buraimoh",
-      "Year": 2023,
+      "id": 23,
+      "title": "Princess",
+      "artist": "Lanre Buraimoh",
+      "year": 2023,
       "image": "images/princess.jpeg"
     },
     {
-      "Title": "A Toast For Yesterday II",
-      "Artist": "Emmanuel Dudu",
-      "Year": 2024,
+      "id": 24,
+      "title": "A Toast For Yesterday II",
+      "artist": "Emmanuel Dudu",
+      "year": 2024,
       "image": "images/emmaueldudu8.jpeg"
     },
     {
-      "Title": "Enduring Passion",
-      "Artist": "Kolade Oshinowo",
-      "Year": 2023,
+      "id": 25,
+      "title": "Enduring Passion",
+      "artist": "Kolade Oshinowo",
+      "year": 2023,
       "image": "images/kolade.webp"
     },
     {
-      "Title": "Cosmic Dance",
-      "Artist": "Nnenna Okore",
-      "Year": 2016,
+      "id": 26,
+      "title": "Cosmic Dance",
+      "artist": "Nnenna Okore",
+      "year": 2016,
       "image": "images/cosmicdance.png"
     },
     {
-      "Title": "Omoge Eko",
-      "Artist": "Oresegun Olumide",
-      "Year": 2023,
+      "id": 27,
+      "title": "Omoge Eko",
+      "artist": "Oresegun Olumide",
+      "year": 2023,
       "image": "images/omogeeko.jpeg"
     },
     {
-      "Title": "Acrobatic",
-      "Artist": "Jimoh Buraimoh",
-      "Year": 2022,
+      "id": 28,
+      "title": "Acrobatic",
+      "artist": "Jimoh Buraimoh",
+      "year": 2022,
       "image": "images/acrobatic.jpeg"
     },
     {
-      "Title": "The Outsider",
-      "Artist": "Uche Edochie",
-      "Year": 2011,
+      "id": 29,
+      "title": "The Outsider",
+      "artist": "Uche Edochie",
+      "year": 2011,
       "image": "images/theoutsider.webp"
     },
     {
-      "Title": "Umogun I",
-      "Artist": "Victor Ehikhamenor",
-      "Year": 2024,
+      "id": 30,
+      "title": "Umogun I",
+      "artist": "Victor Ehikhamenor",
+      "year": 2024,
       "image": "images/umogunI.jpeg"
     },
     {
-      "Title": "Shot Marilyns",
-      "Artist": "Andy Warhol",
-      "Year": 1964,
+      "id": 31,
+      "title": "Shot Marilyns",
+      "artist": "Andy Warhol",
+      "year": 1964,
       "image": "images/Shot_Marilyns.jpg"
     },
     {
-      "Title": "Space Walk",
-      "Artist": "Yinka Shonibare",
-      "Year": 2002,
+      "id": 32,
+      "title": "Space Walk",
+      "artist": "Yinka Shonibare",
+      "year": 2002,
       "image": "images/spacewalk.jpeg"
     },
     {
-      "Title": "Shantavia Beale II",
-      "Artist": "Kehinde Wiley",
-      "Year": 2012,
+      "id": 33,
+      "title": "Shantavia Beale II",
+      "artist": "Kehinde Wiley",
+      "year": 2012,
       "image": "images/Shantavia-Beale-II.webp"
     },
     {
-      "Title": "Emir Of Kano",
-      "Artist": "Ade Adekola",
-      "Year": 2024,
+      "id": 34,
+      "title": "Emir Of Kano",
+      "artist": "Ade Adekola",
+      "year": 2024,
       "image": "images/odaart-ade-adekola-emir-of-kano-2024.jpg"
     },
     {
-      "Title": "The Dancing Bride",
-      "Artist": "Yusuf Grillo",
-      "Year": 1965,
+      "id": 35,
+      "title": "The Dancing Bride",
+      "artist": "Yusuf Grillo",
+      "year": 1965,
       "image": "images/dancing bride.jpeg"
     },
     {
-      "Title": "Crumbling Wall",
-      "Artist": "El Anatsui",
-      "Year": 2000,
+      "id": 36,
+      "title": "Crumbling Wall",
+      "artist": "El Anatsui",
+      "year": 2000,
       "image": "images/crumblingwall.jpeg"
     },
     {
-      "Title": "Alagbon Close",
-      "Artist": "Lemi Ghariokwu",
-      "Year": 1974,
+      "id": 37,
+      "title": "Alagbon Close",
+      "artist": "Lemi Ghariokwu",
+      "year": 1974,
       "image": "images/lemi.jpeg"
     },
     {
-      "Title": "Ana Mmuo",
-      "Artist": "Uche Okeke",
-      "Year": 1961,
+      "id": 38,
+      "title": "Ana Mmuo",
+      "artist": "Uche Okeke",
+      "year": 1961,
       "image": "images/anammuo.jpeg"
     },
     {
-      "Title": "Aeroplane Water Pot",
-      "Artist": "Ladi Kwali",
-      "Year": 1962,
+      "id": 39,
+      "title": "Aeroplane Water Pot",
+      "artist": "Ladi Kwali",
+      "year": 1962,
       "image": "images/ladi.Jpeg"
     },
     {
-      "Title": "It Takes As Long As It Takes",
-      "Artist": "Toyin Ojih Odutola",
-      "Year": 2023,
+      "id": 40,
+      "title": "It Takes As Long As It Takes",
+      "artist": "Toyin Ojih Odutola",
+      "year": 2023,
       "image": "images/toyinojhi.png"
     },
     {
-      "Title": "The School Of Athens",
-      "Artist": "Raphael",
-      "Year": 1511,
+      "id": 41,
+      "title": "The School Of Athens",
+      "artist": "Raphael",
+      "year": 1511,
       "image": "images/athens.webp"
     },
     {
-      "Title": "The Birth Of Venus",
-      "Artist": "Sandro Boticelli",
-      "Year": 1486,
+      "id": 42,
+      "title": "The Birth Of Venus",
+      "artist": "Sandro Boticelli",
+      "year": 1486,
       "image": "images/thebirthofvenus.jpeg"
     },
     {
-      "Title": "Sistine Chapel Cieling",
-      "Artist": "Michelangelo Buonarroti",
-      "Year": 1512,
+      "id": 43,
+      "title": "Sistine Chapel Cieling",
+      "artist": "Michelangelo Buonarroti",
+      "year": 1512,
       "image": "images/chapelcieling.webp"
     },
     {
-      "Title": "Arnolfini Portrait",
-      "Artist": "Jan Van Eyck",
-      "Year": 1434,
+      "id": 44,
+      "title": "Arnolfini Portrait",
+      "artist": "Jan Van Eyck",
+      "year": 1434,
       "image": "images/arnofili.webp"
     },
     {
-      "Title": "The Night Watch",
-      "Artist": "Rembrandt Van Rijn",
-      "Year": 1642,
+      "id": 45,
+      "title": "The Night Watch",
+      "artist": "Rembrandt Van Rijn",
+      "year": 1642,
       "image": "images/nightwatch.webp"
     },
     {
-      "Title": "Liberty Leading The People",
-      "Artist": "Eugene Declacroix",
-      "Year": 1830,
+      "id": 46,
+      "title": "Liberty Leading The People",
+      "artist": "Eugene Declacroix",
+      "year": 1830,
       "image": "images/liberty.webp"
     },
     {
-      "Title": "Michelangelo",
-      "Artist": "David",
-      "Year": 1504,
+      "id": 47,
+      "title": "Michelangelo",
+      "artist": "David",
+      "year": 1504,
       "image": "images/david.jpeg"
     },
     {
-      "Title": "The Raft Of Medusa",
-      "Artist": "Theodore Gericault",
-      "Year": 1818,
+      "id": 48,
+      "title": "The Raft Of Medusa",
+      "artist": "Theodore Gericault",
+      "year": 1818,
       "image": "images/raftofmedusa.jpeg"
     },
     {
-      "Title": "American Gothic",
-      "Artist": "Grant Wood",
-      "Year": 1930,
+      "id": 49,
+      "title": "American Gothic",
+      "artist": "Grant Wood",
+      "year": 1930,
       "image": "images/americangothic.jpeg"
     },
     {
-      "Title": "Primavera",
-      "Artist": "Sandro Botticelli",
-      "Year": 1482,
+      "id": 50,
+      "title": "Primavera",
+      "artist": "Sandro Botticelli",
+      "year": 1482,
       "image": "images/primavera.jpeg"
     },
     {
-      "Title": "The Last Supper",
-      "Artist": "Leonardo Da Vinci",
-      "Year": 1498,
+      "id": 51,
+      "title": "The Last Supper",
+      "artist": "Leonardo Da Vinci",
+      "year": 1498,
       "image": "images/thelastsupper.jpeg"
     },
     {
-      "Title": "Christina's World",
-      "Artist": "Andrew Wyeth",
-      "Year": 1948,
+      "id": 52,
+      "title": "Christina's World",
+      "artist": "Andrew Wyeth",
+      "year": 1948,
       "image": "images/christiana'sworld.jpeg"
     },
     {
-      "Title": "Yellow-Red-Blue",
-      "Artist": "Wassily Kandinsky",
-      "Year": 1925,
+      "id": 53,
+      "title": "Yellow-Red-Blue",
+      "artist": "Wassily Kandinsky",
+      "year": 1925,
       "image": "images/redblueyellow.jpeg"
     },
     {
-      "Title": "The Kiss",
-      "Artist": "Gustav Klimt",
-      "Year": 1908,
+      "id": 54,
+      "title": "The Kiss",
+      "artist": "Gustav Klimt",
+      "year": 1908,
       "image": "images/thekiss.jpeg"
     },
     {
-      "Title": "Fine Wind, Clear Impression",
-      "Artist": "Katsushika Hokusai",
-      "Year": 1832,
+      "id": 55,
+      "title": "Fine Wind, Clear Impression",
+      "artist": "Katsushika Hokusai",
+      "year": 1832,
       "image": "images/finewind.jpeg"
     },
     {
-      "Title": "The Two Fridas",
-      "Artist": "Frida Kahlo",
-      "Year": 1939,
+      "id": 56,
+      "title": "The Two Fridas",
+      "artist": "Frida Kahlo",
+      "year": 1939,
       "image": "images/twofridas.jpeg"
     },
     {
-      "Title": "Olympia",
-      "Artist": "Edouard Manet",
-      "Year": 1863,
+      "id": 57,
+      "title": "Olympia",
+      "artist": "Edouard Manet",
+      "year": 1863,
       "image": "images/olympia.jpeg"
     },
     {
-      "Title": "Impression, Sunrise",
-      "Artist": "Claude Monet",
-      "Year": 1872,
+      "id": 58,
+      "title": "Impression, Sunrise",
+      "artist": "Claude Monet",
+      "year": 1872,
       "image": "images/impressionsunrise.jpeg"
     },
     {
-      "Title": "The Card Players",
-      "Artist": "Paul Cezanne",
-      "Year": 1895,
+      "id": 59,
+      "title": "The Card Players",
+      "artist": "Paul Cezanne",
+      "year": 1895,
       "image": "images/cardplayers.jpeg"
     },
     {
-      "Title": "The HayWain",
-      "Artist": "John Constable",
-      "Year": 1821,
+      "id": 60,
+      "title": "The HayWain",
+      "artist": "John Constable",
+      "year": 1821,
       "image": "images/haywain.jpeg"
     },
     {
-      "Title": "James Mcneill Whistler",
-      "Artist": "Whistler's Mother",
-      "Year": 1871,
+      "id": 61,
+      "title": "James Mcneill Whistler",
+      "artist": "Whistler's Mother",
+      "year": 1871,
       "image": "images/whistler'smother.jpeg"
     },
     {
-      "Title": "Garden Of Earthly Delights",
-      "Artist": "Heironymus Bosch",
-      "Year": 1516,
+      "id": 62,
+      "title": "Garden Of Earthly Delights",
+      "artist": "Heironymus Bosch",
+      "year": 1516,
       "image": "images/earthydelights.jpeg"
     },
     {
-      "Title": "Rain, Steam And Speed",
-      "Artist": "J.M.W. Turner",
-      "Year": 1844,
+      "id": 63,
+      "title": "Rain, Steam And Speed",
+      "artist": "J.M.W. Turner",
+      "year": 1844,
       "image": "images/rainsteamspeed.jpeg"
     },
     {
-      "Title": "Bathers At Asnieres",
-      "Artist": "Georges Seurat",
-      "Year": 1884,
+      "id": 64,
+      "title": "Bathers At Asnieres",
+      "artist": "Georges Seurat",
+      "year": 1884,
       "image": "images/bathersatasnieres.jpeg"
     },
     {
-      "Title": "Ophelia",
-      "Artist": "John Everett Millais",
-      "Year": 1852,
+      "id": 65,
+      "title": "Ophelia",
+      "artist": "John Everett Millais",
+      "year": 1852,
       "image": "images/ophelia.jpeg"
     },
     {
-      "Title": "Les Demoiselles D'avignon",
-      "Artist": "Pablo Picasso",
-      "Year": 1907,
+      "id": 66,
+      "title": "Les Demoiselles D'avignon",
+      "artist": "Pablo Picasso",
+      "year": 1907,
       "image": "images/lesdemoiselles.jpeg"
     },
     {
-      "Title": "Flaming June",
-      "Artist": "Frederic Leighton",
-      "Year": 1895,
+      "id": 67,
+      "title": "Flaming June",
+      "artist": "Frederic Leighton",
+      "year": 1895,
       "image": "images/flamingjune.jpeg"
     },
     {
-      "Title": "The Sleeping Gypsy",
-      "Artist": "Henri Rousseau",
-      "Year": 1897,
+      "id": 68,
+      "title": "The Sleeping Gypsy",
+      "artist": "Henri Rousseau",
+      "year": 1897,
       "image": "images/thesleepinggypsy.jpeg"
     },
     {
-      "Title": "I And The Village",
-      "Artist": "Marc Chargall",
-      "Year": 1911,
+      "id": 69,
+      "title": "I And The Village",
+      "artist": "Marc Chargall",
+      "year": 1911,
       "image": "images/Iandthevillage.jpeg"
     },
     {
-      "Title": "Broadway Boogie Woogie",
-      "Artist": "Piet Mondrian",
-      "Year": 1943,
+      "id": 70,
+      "title": "Broadway Boogie Woogie",
+      "artist": "Piet Mondrian",
+      "year": 1943,
       "image": "images/broadwayboogie.jpeg"
     },
     {
-      "Title": "The Starry Night",
-      "Artist": "Vincent van Gogh",
-      "Year": 1889,
+      "id": 71,
+      "title": "The Starry Night",
+      "artist": "Vincent van Gogh",
+      "year": 1889,
       "image": "images/starrynight.jpeg"
     },
     {
-      "Title": "Galatea Of The Spheres",
-      "Artist": "Salvador Dali",
-      "Year": 1952,
+      "id": 72,
+      "title": "Galatea Of The Spheres",
+      "artist": "Salvador Dali",
+      "year": 1952,
       "image": "images/galatea.jpeg"
     },
     {
-      "Title": "Guernica",
-      "Artist": "Pablo Picasso",
-      "Year": 1937,
+      "id": 73,
+      "title": "Guernica",
+      "artist": "Pablo Picasso",
+      "year": 1937,
       "image": "images/guernica.jpeg"
     },
     {
-      "Title": "Girl With A Pearl Earring",
-      "Artist": "Johannes Vermeer",
-      "Year": 1665,
+      "id": 74,
+      "title": "Girl With A Pearl Earring",
+      "artist": "Johannes Vermeer",
+      "year": 1665,
       "image": "images/girlwithapearlearring.jpeg"
     },
     {
-      "Title": "Self Portrait With Two Circles",
-      "Artist": "Rembrandt Van Rijn",
-      "Year": 1669,
+      "id": 75,
+      "title": "Self Portrait With Two Circles",
+      "artist": "Rembrandt Van Rijn",
+      "year": 1669,
       "image": "images/selfportrait.jpeg"
     },
     {
-      "Title": "The Creation Of Adam",
-      "Artist": "Michelangelo Buonarroti",
-      "Year": 1511,
+      "id": 76,
+      "title": "The Creation Of Adam",
+      "artist": "Michelangelo Buonarroti",
+      "year": 1511,
       "image": "images/thecreationofadam.jpeg"
     },
     {
-      "Title": "Campbell's Soup Cans",
-      "Artist": "Andy Warhol",
-      "Year": 1962,
+      "id": 77,
+      "title": "Campbell's Soup Cans",
+      "artist": "Andy Warhol",
+      "year": 1962,
       "image": "images/soupcans.jpeg"
     },
     {
-      "Title": "No.5, 1948",
-      "Artist": "Jackson Pollock",
-      "Year": 1948,
+      "id": 78,
+      "title": "No.5, 1948",
+      "artist": "Jackson Pollock",
+      "year": 1948,
       "image": "images/No.5.jpeg"
     },
     {
-      "Title": "Dance At Bougival",
-      "Artist": "Pierre-Auguste Renoir",
-      "Year": 1883,
+      "id": 79,
+      "title": "Dance At Bougival",
+      "artist": "Pierre-Auguste Renoir",
+      "year": 1883,
       "image": "images/danceatb.jpeg"
     },
     {
-      "Title": "Tahitian Women On The Beach",
-      "Artist": "Paul Gaugin",
-      "Year": 1891,
+      "id": 80,
+      "title": "Tahitian Women On The Beach",
+      "artist": "Paul Gaugin",
+      "year": 1891,
       "image": "images/Paul_Gauguin_056.jpg"
     },
     {
-      "Title": "Spirit Of The Dead Watching",
-      "Artist": "Paul Gauguin",
-      "Year": 1892,
+      "id": 81,
+      "title": "Spirit Of The Dead Watching",
+      "artist": "Paul Gauguin",
+      "year": 1892,
       "image": "images/spiritofthrdeadpaul.jpeg"
     },
     {
-      "Title": "Anyanwu",
-      "Artist": "Ben Enwonwu",
-      "Year": 1955,
+      "id": 82,
+      "title": "Anyanwu",
+      "artist": "Ben Enwonwu",
+      "year": 1955,
       "image": "images/anyanwu.jpeg"
     },
     {
-      "Title": "Bharat Mata",
-      "Artist": "Abanindranath Tagore",
-      "Year": 1905,
+      "id": 83,
+      "title": "Bharat Mata",
+      "artist": "Abanindranath Tagore",
+      "year": 1905,
       "image": "images/bharat.jpeg"
     },
     {
-      "Title": "Shakuntala",
-      "Artist": "Raja Ravi",
-      "Year": 1898,
+      "id": 84,
+      "title": "Shakuntala",
+      "artist": "Raja Ravi",
+      "year": 1898,
       "image": "images/shakuntala.jpeg"
     },
     {
-      "Title": "Reborn Sounds Of Childhood Dreams",
-      "Artist": "Ibrahim El-Salahi",
-      "Year": 1964,
+      "id": 85,
+      "title": "Reborn Sounds Of Childhood Dreams",
+      "artist": "Ibrahim El-Salahi",
+      "year": 1964,
       "image": "images/reborn.jpeg"
     },
     {
-      "Title": "Running Birds",
-      "Artist": "Bruce Onabrakpeya",
-      "Year": 1984,
+      "id": 86,
+      "title": "Running Birds",
+      "artist": "Bruce Onabrakpeya",
+      "year": 1984,
       "image": "images/runningbirds.jpeg"
     },
     {
-      "Title": "Janded",
-      "Artist": "Njideka Akunyili Crossby",
-      "Year": 2010,
+      "id": 87,
+      "title": "Janded",
+      "artist": "Njideka Akunyili Crossby",
+      "year": 2010,
       "image": "images/janded.jpeg"
     },
     {
-      "Title": "Fang Ngil Mask",
-      "Artist": "Fang People",
-      "Year": 1900,
+      "id": 88,
+      "title": "Fang Ngil Mask",
+      "artist": "Fang People",
+      "year": 1900,
       "image": "images/fangngil.jpeg"
     },
     {
-      "Title": "Old Man's Cloth",
-      "Artist": "El-Anatsui",
-      "Year": 2003,
+      "id": 89,
+      "title": "Old Man's Cloth",
+      "artist": "El-Anatsui",
+      "year": 2003,
       "image": "images/oldman'scloth.jpeg"
     },
     {
-      "Title": "Woman Ironing",
-      "Artist": "Pablo Picasso",
-      "Year": 1904,
+      "id": 90,
+      "title": "Woman Ironing",
+      "artist": "Pablo Picasso",
+      "year": 1904,
       "image": "images/womanironing.jpeg"
     },
     {
-      "Title": "Black Square",
-      "Artist": "Kazimir Malevich",
-      "Year": 1915,
+      "id": 91,
+      "title": "Black Square",
+      "artist": "Kazimir Malevich",
+      "year": 1915,
       "image": "images/blacksquare.jpeg"
     },
     {
-      "Title": "Henri Matisse",
-      "Artist": "Red Room",
-      "Year": 1908,
+      "id": 92,
+      "title": "Henri Matisse",
+      "artist": "Red Room",
+      "year": 1908,
       "image": "images/redroom.jpeg"
     },
     {
-      "Title": "Parents Resurrecting",
-      "Artist": "Stanley Spencer",
-      "Year": 1933,
+      "id": 93,
+      "title": "Parents Resurrecting",
+      "artist": "Stanley Spencer",
+      "year": 1933,
       "image": "images/parents resurrecting.jpeg"
     },
     {
-      "Title": "Woman With A Hat",
-      "Artist": "Henri Matisse",
-      "Year": 1905,
+      "id": 94,
+      "title": "Woman With A Hat",
+      "artist": "Henri Matisse",
+      "year": 1905,
       "image": "images/Matisse-Woman-with-a-Hat.jpg"
     },
     {
-      "Title": "Reclining Figure",
-      "Artist": "Henry Moore",
-      "Year": 1938,
+      "id": 95,
+      "title": "Reclining Figure",
+      "artist": "Henry Moore",
+      "year": 1938,
       "image": "images/reclining.jpeg"
     },
     {
-      "Title": "Spiral Jetty",
-      "Artist": "Robert Smithson",
-      "Year": 1970,
+      "id": 96,
+      "title": "Spiral Jetty",
+      "artist": "Robert Smithson",
+      "year": 1970,
       "image": "images/spiraljetty.jpeg"
     },
     {
-      "Title": "The Swing",
-      "Artist": "Jean-Honore Fragonard",
-      "Year": 1767,
+      "id": 97,
+      "title": "The Swing",
+      "artist": "Jean-Honore Fragonard",
+      "year": 1767,
       "image": "images/theswing.jpeg"
     },
     {
-      "Title": "The Stone Breakers",
-      "Artist": "Gustave Courbet",
-      "Year": 1849,
+      "id": 98,
+      "title": "The Stone Breakers",
+      "artist": "Gustave Courbet",
+      "year": 1849,
       "image": "images/stonebreakers.jpeg"
     },
     {
-      "Title": "The Third Of May 1808",
-      "Artist": "Francisco Goya",
-      "Year": 1814,
+      "id": 99,
+      "title": "The Third Of May 1808",
+      "artist": "Francisco Goya",
+      "year": 1814,
       "image": "images/thirdofmay.jpeg"
     },
     {
-      "Title": "Hot Head",
-      "Artist": "Olaolu Slawn",
-      "Year": 2024,
+      "id": 100,
+      "title": "Hot Head",
+      "artist": "Olaolu Slawn",
+      "year": 2024,
       "image": "images/hothead.jpeg"
     }
 ]
+

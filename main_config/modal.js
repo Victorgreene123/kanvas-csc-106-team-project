@@ -12,7 +12,7 @@ export function openArtworkModal(artwork, allArtworks) {
 }
 
 function updateModalContent(artwork) {
-  document.getElementById("modalImage").src = artwork.image;
+  document.getElementById("modalImage").src = `/components/${artwork.image}`;
   document.getElementById("modalTitle").textContent = artwork.title;
   document.getElementById("modalArtist").textContent = `by ${artwork.artist}`;
   document.getElementById("modalMedium").textContent = artwork.medium;

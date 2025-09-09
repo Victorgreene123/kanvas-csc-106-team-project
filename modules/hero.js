@@ -2,13 +2,13 @@ function renderHero(){
     return (
         `
        
-  <div class="hero-bg">
+  <div class="hero-bg" id="hero">
     <h1 class="logo-text">
         🎨<span>k</span><span>a</span><span>n</span><span>v</span><span>a</span><span>s</span>
       </h1>
       
     <div class="hero-frames">
-      <div class="frame frame1">
+     <!-- <div class="frame frame1">
         <img src="../assets/frame2.jpg" alt="">
       </div>
       <div class="frame frame2">
@@ -20,6 +20,7 @@ function renderHero(){
       <div class="frame frame4">
         <img src="../assets/frame4.jpg" alt="">
       </div>
+      -->
 
     </div>
     <div class="hero-text">
