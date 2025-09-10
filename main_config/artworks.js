@@ -9,6 +9,7 @@ export async function loadArtworks() {
 
     // 2. Load user-added artworks from localStorage
     const localArtworks = JSON.parse(localStorage.getItem("kanvasArtworks") || "[]");
+    console.log("Loaded artworks from localStorage:", localArtworks);
 
     // 3. Merge (user artworks first so they show up on top)
     return [...localArtworks, ...jsonArtworks];

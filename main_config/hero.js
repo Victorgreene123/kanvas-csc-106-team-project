@@ -51,7 +51,7 @@ async function performSearch() {
     }
 
     const allArtworks = await loadArtworks();
-    const filteredArtworks = allArtworks.filter(artwork => artwork.year === year);
+    const filteredArtworks = allArtworks.filter(artwork => parseInt(artwork.year) === year);
 
     await renderFilteredArtworks(filteredArtworks);
 }

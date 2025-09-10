@@ -10,7 +10,7 @@ export function createArtworkCard(artwork, allArtworks) {
     <div class="p-4">
       <h3 class="text-lg font-semibold text-gray-900 mb-1">${artwork.title}</h3>
       <p class="text-gray-600 text-sm">by ${artwork.artist}</p>
-      <p class="text-gray-500 text-xs mt-1">${artwork.medium} • ${artwork.year}</p>
+      <p class="text-gray-500 text-xs mt-1">${artwork.medium || "Not Applicable"} • ${artwork.year}</p>
     </div>
   `;
   card.addEventListener("click", () => openArtworkModal(artwork, allArtworks));
